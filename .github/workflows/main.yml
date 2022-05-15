@@ -1,5 +1,7 @@
 name: Get Geolite2 ipv4
-on: [push]
+on:
+  schedule:
+    - cron: "0 3 * * *"
 jobs:
   get_geolite2_ipv4:
     runs-on: ubuntu-latest
